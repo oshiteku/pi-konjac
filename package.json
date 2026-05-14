@@ -1,0 +1,59 @@
+{
+  "name": "pi-konjac",
+  "version": "0.1.0",
+  "description": "Pi coding agent input translation extension using Bergamot language pair models.",
+  "type": "module",
+  "license": "MPL-2.0",
+  "author": "oshiteku",
+  "keywords": [
+    "pi-package",
+    "pi-extension",
+    "translation",
+    "bergamot",
+    "firefox-translations",
+    "machine-translation",
+    "coding-agent"
+  ],
+  "homepage": "https://github.com/oshiteku/pi-konjac#readme",
+  "bugs": {
+    "url": "https://github.com/oshiteku/pi-konjac/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oshiteku/pi-konjac.git"
+  },
+  "packageManager": "pnpm@10.33.0",
+  "scripts": {
+    "check": "node --check extensions/index.js && node --check extensions/model-selector.js && node --check src/bergamot.js && node --check src/storage.js",
+    "translate": "node scripts/translate.js"
+  },
+  "pi": {
+    "extensions": [
+      "./extensions/index.js"
+    ]
+  },
+  "files": [
+    "extensions",
+    "src",
+    "scripts",
+    "README.md",
+    "LICENSE"
+  ],
+  "dependencies": {
+    "@browsermt/bergamot-translator": "0.4.9"
+  },
+  "devDependencies": {
+    "@earendil-works/pi-tui": "0.74.0"
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-tui": "*"
+  },
+  "peerDependenciesMeta": {
+    "@earendil-works/pi-tui": {
+      "optional": true
+    }
+  },
+  "engines": {
+    "node": ">=20.6.0"
+  }
+}
