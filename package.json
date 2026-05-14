@@ -40,18 +40,8 @@
     "LICENSE"
   ],
   "dependencies": {
-    "@browsermt/bergamot-translator": "0.4.9"
-  },
-  "devDependencies": {
+    "@browsermt/bergamot-translator": "0.4.9",
     "@earendil-works/pi-tui": "0.74.0"
-  },
-  "peerDependencies": {
-    "@earendil-works/pi-tui": "*"
-  },
-  "peerDependenciesMeta": {
-    "@earendil-works/pi-tui": {
-      "optional": true
-    }
   },
   "engines": {
     "node": ">=20.6.0"
