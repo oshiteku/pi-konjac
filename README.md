@@ -1,5 +1,7 @@
 # pi-konjac
 
+[![npm](https://img.shields.io/npm/v/pi-konjac)](https://www.npmjs.com/package/pi-konjac)
+
 A [pi coding agent](https://github.com/earendil-works/pi) extension package that translates user input before it is sent to the agent.
 
 pi-konjac uses Firefox Translations / Bergamot models through `@browsermt/bergamot-translator`.
@@ -11,6 +13,12 @@ pi-konjac uses Firefox Translations / Bergamot models through `@browsermt/bergam
 - Lets you choose any Bergamot registry model pair and architecture from `/konjac`.
 
 ## Install
+
+Install from npm:
+
+```bash
+pi install npm:pi-konjac
+```
 
 Install from GitHub:
 
